@@ -22,6 +22,11 @@ return [
     'comment_model' => \Parallax\FilamentComments\Models\FilamentComment::class,
 
     /*
+     * The comment component to be used
+     */
+    'comment_component' => \Parallax\FilamentComments\Livewire\CommentsComponent::class,
+
+    /*
      * The policy that will be used to authorize actions against comments.
      */
     'model_policy' => \Parallax\FilamentComments\Policies\FilamentCommentPolicy::class,

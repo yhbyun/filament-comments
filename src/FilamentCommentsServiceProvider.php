@@ -53,7 +53,7 @@ class FilamentCommentsServiceProvider extends PackageServiceProvider
 
     public function packageBooted(): void
     {
-        Livewire::component('comments', CommentsComponent::class);
+        Livewire::component('comments', config('filament-comments.comment_component'));
 
         Gate::policy(config('filament-comments.comment_model'), config('filament-comments.model_policy', FilamentCommentPolicy::class));
 
